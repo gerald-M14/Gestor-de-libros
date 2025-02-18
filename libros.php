@@ -85,16 +85,19 @@ class Administrador {
         if (empty($libros)) {
             return "<p>No hay libros registrados.</p>";
         }
-        $html = "<table border='1'>
-        <tr>
-            <th>ID</th>
-            <th>Título</th>
-            <th>Autor</th>
-            <th>Fecha de Publicación</th>
-            <th>Editorial</th>
-            <th>Estado</th>
-            <th>Acciones</th>
-        </tr>";
+        $html = "<table class='tabla-libros'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Fecha de Publicación</th>
+                <th>Editorial</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>";
 
 foreach ($libros as $libro) {
 $html .= "<tr>
@@ -105,17 +108,17 @@ $html .= "<tr>
             <td>{$libro['editorial']}</td>
             <td>{$libro['estado']}</td>
             <td>
-                <button onclick='editarLibro({$libro['id']}, \"{$libro['titulo']}\", \"{$libro['autor']}\", \"{$libro['fecha_publicacion']}\", \"{$libro['editorial']}\", \"{$libro['estado']}\")'>Editar</button>
-                <form method='POST'>
+                <button class='btn-editar' onclick='editarLibro({$libro['id']}, \"{$libro['titulo']}\", \"{$libro['autor']}\", \"{$libro['fecha_publicacion']}\", \"{$libro['editorial']}\", \"{$libro['estado']}\")'>Editar</button>
+                <form method='POST' class='form-eliminar'>
                     <input type='hidden' name='id' value='{$libro['id']}'>
-                    <button type='submit' name='accion' value='eliminar'>Eliminar</button>
+                    <button type='submit' name='accion' value='eliminar' class='btn-eliminar'>Eliminar</button>
                 </form>
             </td>
         </tr>";
-
 }
 
-$html .= "</table>";
+$html .= "</tbody></table>";
+
 
 $html .= "
 <script>

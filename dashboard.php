@@ -11,26 +11,30 @@ if (!isset($_SESSION["admin"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles.css">
     <title>Panel de Administrador</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
-        .container { margin: 100px auto; padding: 20px; width: 300px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-        a { text-decoration: none; color: white; background: red; padding: 10px; display: inline-block; border-radius: 5px; }
-    </style>
+
 </head>
 <body>
 
 <div class="container">
+
+    <div class="container__login">
     <h2>Bienvenido, <?php echo $_SESSION["admin"]; ?></h2>
-    <p>Has iniciado sesión correctamente.</p>
-    <a href="logout.php">Cerrar Sesión</a>
-</div>
+    <a class="logout" href="logout.php">Cerrar Sesión</a>
+    </div>
+    
+
 
 <h1>Administración de Libros</h1>
 
+<div class="container_acciones">
+
+    <section class="agregar"> 
     <!-- Formulario para agregar un libro -->
     <h2>Agregar Libro</h2>
-    <form method="POST">
+    <form class="form form_agregar" method="POST">
         <input type="text" name="titulo" placeholder="Título" required>
         <input type="text" name="autor" placeholder="Autor" required>
         <input type="date" name="fecha_publicacion" placeholder="Fecha de Publicación" required>
@@ -38,10 +42,12 @@ if (!isset($_SESSION["admin"])) {
         <input type="text" name="estado" placeholder="Estado" required>
         <button type="submit" name="accion" value="agregar">Agregar</button>
     </form>
+    </section>
 
     <!-- Formulario para editar un libro -->
+     <section class="editar"> 
     <h2>Editar Libro</h2>
-    <form method="POST" action="actualizar_libro.php">
+    <form class="form form_agregar" method="POST" action="actualizar_libro.php">
         <input type="hidden" name="idEditar" id="inputId">
         <input type="text" name="tituloEditar" id="inputTitulo" placeholder="Título">
         <input type="text" name="autorEditar" id="inputAutor" placeholder="Autor">
@@ -51,25 +57,30 @@ if (!isset($_SESSION["admin"])) {
         
         <button type="submit" name="accion" value="editar">Actualizar</button>
     </form>
+    </section>
+    
 
-
-
-
-
+<section class="eliminar">
     <!-- Formulario para eliminar un libro -->
     <h2>Eliminar Libro</h2>
-    <form method="POST">
+    <form class="form form_eliminar" method="POST">
         <input type="number" name="id" placeholder="ID del libro" required>
         <button type="submit" name="accion" value="eliminar">Eliminar</button>
     </form>
+    </section>
 
+    <section class="buscar">
+
+    
     <!-- Formulario para buscar un libro -->
     <h2>Buscar Libro</h2>
-    <form method="POST">
+    <form class="form form_agregar"method="POST">
         <input type="text" name="texto" placeholder="Buscar por título o autor">
         <button type="submit" name="accion" value="buscar">Buscar</button>
     </form>
+    </section>
 
+</div>
     <?php
     require 'libros.php';
     $admin = new Administrador();
@@ -102,5 +113,6 @@ if (!isset($_SESSION["admin"])) {
 
     echo $admin->mostrarLibros();
     ?>
+</div>
 </body>
 </html>

@@ -13,14 +13,6 @@
         "autor": "perez",
         "fecha_publicacion": "2025-02-11",
         "editorial": "x",
-        "estado": "activo"
-    },
-    {
-        "id": 4,
-        "titulo": "Probando",
-        "autor": "perez",
-        "fecha_publicacion": "2025-02-11",
-        "editorial": "yyy",
         "estado": "no activo"
     }
 ]
