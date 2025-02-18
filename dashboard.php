@@ -31,7 +31,7 @@ if (!isset($_SESSION["admin"])) {
 
 <div class="container_acciones">
 
-    <section class="agregar"> 
+<section class="agregar"> 
     <!-- Formulario para agregar un libro -->
     <h2>Agregar Libro</h2>
     <form class="form form_agregar" method="POST">
@@ -39,13 +39,20 @@ if (!isset($_SESSION["admin"])) {
         <input type="text" name="autor" placeholder="Autor" required>
         <input type="date" name="fecha_publicacion" placeholder="Fecha de Publicación" required>
         <input type="text" name="editorial" placeholder="Editorial" required>
-        <input type="text" name="estado" placeholder="Estado" required>
+        
+        <!-- Cambié el input de estado por un select -->
+        <select name="estado" required>
+            <option value="disponible">Disponible</option>
+            <option value="no_disponible">No disponible</option>
+            <option value="prestamo_activo">Préstamo activo</option>
+        </select>
+        
         <button type="submit" name="accion" value="agregar">Agregar</button>
     </form>
-    </section>
+</section>
 
-    <!-- Formulario para editar un libro -->
-     <section class="editar"> 
+<!-- Formulario para editar un libro -->
+<section class="editar"> 
     <h2>Editar Libro</h2>
     <form class="form form_agregar" method="POST" action="actualizar_libro.php">
         <input type="hidden" name="idEditar" id="inputId">
@@ -53,11 +60,18 @@ if (!isset($_SESSION["admin"])) {
         <input type="text" name="autorEditar" id="inputAutor" placeholder="Autor">
         <input type="date" name="fecha_publicacionEditar" id="inputFecha" placeholder="Fecha de publicación">
         <input type="text" name="editorialEditar" id="inputEditorial" placeholder="Editorial">
-        <input type="text" name="estadoEditar" id="inputEstado" placeholder="Estado">
+        
+        <!-- Cambié el input de estado por un select -->
+        <select name="estadoEditar" id="inputEstado" required>
+            <option value="disponible">Disponible</option>
+            <option value="no_disponible">No disponible</option>
+            <option value="prestamo_activo">Préstamo activo</option>
+        </select>
         
         <button type="submit" name="accion" value="editar">Actualizar</button>
     </form>
-    </section>
+</section>
+
     
 
 <section class="eliminar">

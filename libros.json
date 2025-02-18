@@ -1,18 +1,74 @@
 [
     {
-        "id": 1,
-        "titulo": "Probando",
-        "autor": "perez",
-        "fecha_publicacion": "2025-02-11",
-        "editorial": "pppp",
-        "estado": "activo"
+        "id": 4,
+        "titulo": "Cien a\u00f1os de soledad",
+        "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+        "fecha_publicacion": "1967-06-05",
+        "editorial": "Editorial Sudamericana",
+        "estado": "disponible"
     },
     {
-        "id": 2,
-        "titulo": "Probando",
-        "autor": "perez",
-        "fecha_publicacion": "2025-02-11",
-        "editorial": "x",
-        "estado": "no activo"
+        "id": 5,
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "fecha_publicacion": "1949-06-08",
+        "editorial": "Secker & Warburg",
+        "estado": "no disponible"
+    },
+    {
+        "id": 6,
+        "titulo": "Matar a un ruise\u00f1or",
+        "autor": "Harper Lee",
+        "fecha_publicacion": "1960-07-11",
+        "editorial": "J.B. Lippincott & Co.",
+        "estado": "prestamo activo"
+    },
+    {
+        "id": 7,
+        "titulo": "El gran Gatsby",
+        "autor": "F. Scott Fitzgerald",
+        "fecha_publicacion": "1925-04-10",
+        "editorial": "Charles Scribner's Sons",
+        "estado": "disponible"
+    },
+    {
+        "id": 8,
+        "titulo": "Cumbres Borrascosas",
+        "autor": "Emily Bront\u00eb",
+        "fecha_publicacion": "1847-12-01",
+        "editorial": "Thomas Cautley Newby",
+        "estado": "no disponible"
+    },
+    {
+        "id": 9,
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "fecha_publicacion": "1605-01-16",
+        "editorial": "Francisco de Robles",
+        "estado": "disponible"
+    },
+    {
+        "id": 10,
+        "titulo": "El retrato de Dorian Gray",
+        "autor": "Oscar Wilde",
+        "fecha_publicacion": "1890-07-01",
+        "editorial": "Lippincott's Monthly Magazine",
+        "estado": "prestamo activo"
+    },
+    {
+        "id": 12,
+        "titulo": "Crimen y castigo",
+        "autor": "Fyodor Dostoevsky",
+        "fecha_publicacion": "1866-01-01",
+        "editorial": "The Russian Messenger",
+        "estado": "no disponible"
+    },
+    {
+        "id": 13,
+        "titulo": "La Odisea",
+        "autor": "Homero",
+        "fecha_publicacion": "800 A.C.",
+        "editorial": "Desconocida",
+        "estado": "prestamo activo"
     }
 ]
