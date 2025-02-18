@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['accion']) && $_POST['a
     file_put_contents('libros.json', json_encode($libros, JSON_PRETTY_PRINT));
     
     // Redirigir a la página principal después de la actualización
-    header('Location: dashboard.php');
+    header('Location: dashboard_admin.php');
     exit();
 }
 ?>

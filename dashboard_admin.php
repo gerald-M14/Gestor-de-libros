@@ -20,7 +20,7 @@ if (!isset($_SESSION["admin"])) {
 
 <div class="container">
 
-    <div class="container__login">
+    <div class="container__bienvenida">
     <h2>Bienvenido, <?php echo $_SESSION["admin"]; ?></h2>
     <a class="logout" href="logout.php">Cerrar Sesión</a>
     </div>
@@ -76,7 +76,7 @@ if (!isset($_SESSION["admin"])) {
 
 <section class="eliminar">
     <!-- Formulario para eliminar un libro -->
-    <h2>Eliminar Libro</h2>
+    <h2>Eliminar Libro por ID</h2>
     <form class="form form_eliminar" method="POST">
         <input type="number" name="id" placeholder="ID del libro" required>
         <button type="submit" name="accion" value="eliminar">Eliminar</button>
@@ -84,8 +84,6 @@ if (!isset($_SESSION["admin"])) {
     </section>
 
     <section class="buscar">
-
-    
     <!-- Formulario para buscar un libro -->
     <h2>Buscar Libro</h2>
     <form class="form form_agregar"method="POST">

@@ -13,6 +13,100 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
+
+/*estilos para index */
+.login-options {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    margin: 0;
+}
+
+.btn-admin, .btn-cliente {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-admin {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-admin:hover {
+    background-color: #0056b3;
+}
+
+.btn-cliente {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-cliente:hover {
+    background-color: #218838;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-email,
+.input-password {
+    font-size: 16px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: darkblue;
+}
+
+
+
 .logout { 
     text-decoration: none; 
     color: white;
@@ -22,7 +116,7 @@ body {
     border-radius: 5px; 
 }
 
-.container__login{
+.container__bienvenida{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;

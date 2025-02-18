@@ -65,7 +65,7 @@ class Administrador extends Persona {
 }
 
 // Clase Administrador que extiende Persona
-class cliente extends Persona {
+class Cliente extends Persona {
 
     // Constructor que llama al de la clase padre
     public function __construct($id, $nombre, $apellido, $correo, $contrasena, $telefono) {
