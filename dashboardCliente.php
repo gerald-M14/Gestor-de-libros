@@ -21,7 +21,7 @@ if (!isset($_SESSION["Cliente"])) {
 <div class="container">
 
     <div class="container__bienvenida">
-    <h2>Bienvenido, <?php echo $_SESSION["cliente"]; ?></h2>
+    <h2>Bienvenido, <?php echo $_SESSION["Cliente"]; ?></h2>
     <a class="logout" href="logout.php">Cerrar Sesión</a>
     </div>
 
