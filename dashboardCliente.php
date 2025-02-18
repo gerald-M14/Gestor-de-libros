@@ -38,13 +38,14 @@ if (!isset($_SESSION["Cliente"])) {
 
     <?php
     require 'libros.php';
-    $Cliente = new Cliente();
+
+    $cliente = new Cliente(); 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $accion = $_POST["accion"];
 
         if ($accion == "buscar") {
-            $resultados = $cliente->buscarLibro($_POST["texto"]);
+            $resultados = $cliente->buscarLibro($_POST["texto"]); 
             echo "<h3>Resultados:</h3>";
             foreach ($resultados as $libro) {
                 echo "ID: " . $libro["id"] . " - " . $libro["titulo"] . " - " . $libro["autor"] . "<br>";
@@ -52,8 +53,9 @@ if (!isset($_SESSION["Cliente"])) {
         }
     }
 
-    echo $cliente->mostrarLibros();
-    ?>
+    echo $cliente->mostrarLibros();  
+?>
+
 
     </div>
     </body>

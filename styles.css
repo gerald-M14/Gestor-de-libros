@@ -160,7 +160,7 @@ body {
 }
 
 /* Estilo para los botones */
-.btn-editar, .btn-eliminar {
+.btn-editar, .btn-eliminar, .btn-prestar {
     padding: 8px 16px;
     margin: 5px;
     border: none;
@@ -168,12 +168,12 @@ body {
     border-radius: 5px;
 }
 
-.btn-editar {
+.btn-editar, .btn-prestar {
     background-color: #4CAF50;
     color: white;
 }
 
-.btn-editar:hover {
+.btn-editar:hover, .btn-prestar:hover {
     background-color: #45a049;
 }
 

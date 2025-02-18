@@ -154,4 +154,65 @@ return $html;
 // $resultados = $admin->buscarLibro("Principito");
 // print_r($resultados);
 
+class Cliente {
+    private $archivo = 'libros.json';
+
+    // Cargar los libros desde el archivo JSON
+    private function cargarLibros() {
+        if (!file_exists($this->archivo)) {
+            file_put_contents($this->archivo, json_encode([]));
+        }
+        $json = file_get_contents($this->archivo);
+        return json_decode($json, true);
+    }
+
+    // Guardar los libros en el archivo JSON
+    private function guardarLibros($libros) {
+        file_put_contents($this->archivo, json_encode($libros, JSON_PRETTY_PRINT));
+    }
+
+     // Obtener y mostrar todos los libros
+     public function mostrarLibros() {
+        $libros = $this->cargarLibros();
+        if (empty($libros)) {
+            return "<p>No hay libros registrados.</p>";
+        }
+        $html = "<table class='tabla-libros'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Fecha de Publicación</th>
+                <th>Editorial</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>";
+
+foreach ($libros as $libro) {
+$html .= "<tr>
+            <td>{$libro['id']}</td>
+            <td>{$libro['titulo']}</td>
+            <td>{$libro['autor']}</td>
+            <td>{$libro['fecha_publicacion']}</td>
+            <td>{$libro['editorial']}</td>
+            <td>{$libro['estado']}</td>
+            <td>
+                <form method='POST' class='form-eliminar'>
+                    <input type='hidden' name='id' value='{$libro['id']}'>
+                    <button type='submit' name='accion' value='pedir_prestado' class='btn-prestar'>Pedir prestado</button>
+                </form>
+            </td>
+        </tr>";
+}
+
+$html .= "</tbody></table>";
+
+
+return $html;
+}
+
+}
 ?>
