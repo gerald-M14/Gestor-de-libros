@@ -136,24 +136,6 @@ return $html;
 }
 }
 
-
-// // Ejemplo de uso
-// $admin = new Administrador();
-
-// // Agregar libros
-// echo $admin->agregarLibro("El Principito", "Antoine de Saint-Exupéry");
-// echo $admin->agregarLibro("Cien años de soledad", "Gabriel García Márquez");
-
-// // Editar un libro
-// echo $admin->editarLibro(1, "El Principito (Edición especial)", "Antoine de Saint-Exupéry");
-
-// // Eliminar un libro
-// echo $admin->eliminarLibro(2);
-
-// // Buscar libros
-// $resultados = $admin->buscarLibro("Principito");
-// print_r($resultados);
-
 class Cliente {
     private $archivo = 'libros.json';
 
@@ -191,24 +173,29 @@ class Cliente {
         </thead>
         <tbody>";
 
-foreach ($libros as $libro) {
-$html .= "<tr>
-            <td>{$libro['id']}</td>
-            <td>{$libro['titulo']}</td>
-            <td>{$libro['autor']}</td>
-            <td>{$libro['fecha_publicacion']}</td>
-            <td>{$libro['editorial']}</td>
-            <td>{$libro['estado']}</td>
-            <td>
-                <form method='POST' class='form-eliminar'>
-                    <input type='hidden' name='id' value='{$libro['id']}'>
-                    <button type='submit' name='accion' value='pedir_prestado' class='btn-prestar'>Pedir prestado</button>
-                </form>
-            </td>
-        </tr>";
-}
-
-$html .= "</tbody></table>";
+        foreach ($libros as $libro) {
+            $disabled = ($libro['estado'] !== 'disponible') ? 'disabled' : '';
+        
+            $html .= "<tr>
+                        <td>{$libro['id']}</td>
+                        <td>{$libro['titulo']}</td>
+                        <td>{$libro['autor']}</td>
+                        <td>{$libro['fecha_publicacion']}</td>
+                        <td>{$libro['editorial']}</td>
+                        <td>{$libro['estado']}</td>
+                        <td>
+                            <form method='POST' class='form-prestar'>
+                                <input type='hidden' name='id' value='{$libro['id']}'>
+                                <button type='submit' name='accion' value='pedir_prestado' class='btn-prestar' $disabled>
+                                    Pedir prestado
+                                </button>
+                            </form>
+                        </td>
+                    </tr>";
+        }
+        
+        $html .= "</tbody></table>";
+        
 
 
 return $html;

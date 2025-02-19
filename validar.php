@@ -9,21 +9,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST["correo"];
     $contrasena = $_POST["contrasena"];
 
-    // Validación de credenciales del administrador
     if ($correo == $admin->getCorreo() && $contrasena == $admin->getContrasena()) {
         $_SESSION["admin"] = $admin->getNombre();
         header("Location: dashboard_admin.php");
         exit();
     }
 
-    // Validación de credenciales del Cliente
     if ($correo == $Cliente->getCorreo() && $contrasena == $Cliente->getContrasena()) {
         $_SESSION["Cliente"] = $Cliente->getNombre();
         header("Location: dashboardCliente.php");
         exit();
     }
 
-    // Si las credenciales no coinciden con ninguno de los dos, mostrar el mensaje de error
     echo "<script>alert('Correo o contraseña incorrectos'); window.location.href='index.php';</script>";
 }
 ?>

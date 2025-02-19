@@ -177,6 +177,11 @@ body {
     background-color: #45a049;
 }
 
+.btn-prestar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 .btn-eliminar {
     background-color: #f44336;
     color: white;
@@ -187,7 +192,7 @@ body {
 }
 
 /* Formulario de eliminación */
-.form-eliminar {
+.form-eliminar, .form-prestar {
     display: inline;
 }
 
