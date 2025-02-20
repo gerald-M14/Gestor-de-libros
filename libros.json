@@ -1,74 +1,92 @@
 [
     {
+        "id": 1,
+        "titulo": "El hombre invisible",
+        "autor": "Ralph Ellison",
+        "fecha_publicacion": "1952-04-14",
+        "editorial": "Random House",
+        "estado": "Disponible",
+        "imagen_url": "https:\/\/images.cdn1.buscalibre.com\/fit-in\/360x360\/89\/a8\/89a8611a4aa2c2bd5133803622d71eeb.jpg",
+        "categoria": "Ficci\u00f3n"
+    },
+    {
+        "id": 2,
+        "titulo": "Fahrenheit 451",
+        "autor": "Ray Bradbury",
+        "fecha_publicacion": "1953-10-19",
+        "editorial": "Ballantine Books",
+        "estado": "No disponible",
+        "imagen_url": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTRrA41PsSZq1YWd628VnnQE8iCNE4uUVjjNQ&s",
+        "categoria": "Ciencia ficci\u00f3n"
+    },
+    {
+        "id": 3,
+        "titulo": "El c\u00f3digo Da Vinci",
+        "autor": "Dan Brown",
+        "fecha_publicacion": "2003-03-18",
+        "editorial": "Doubleday",
+        "estado": "Pr\u00e9stamo activo",
+        "imagen_url": "https:\/\/ellector.com.pa\/cdn\/shop\/files\/9788408095330.jpg?v=1701545865",
+        "categoria": "Misterio"
+    },
+    {
         "id": 4,
-        "titulo": "Cien a\u00f1os de soledad",
-        "autor": "Gabriel Garc\u00eda M\u00e1rquez",
-        "fecha_publicacion": "1967-06-05",
-        "editorial": "Editorial Sudamericana",
-        "estado": "disponible"
+        "titulo": "Los juegos del hambre",
+        "autor": "Suzanne Collins",
+        "fecha_publicacion": "2008-09-14",
+        "editorial": "Scholastic Press",
+        "estado": "Disponible",
+        "imagen_url": "https:\/\/ellector.com.pa\/cdn\/shop\/products\/los-juegos-del-hambre-los-juegos-del-hambre-1.jpg?v=1674337844",
+        "categoria": "Distop\u00eda"
     },
     {
         "id": 5,
-        "titulo": "1984",
-        "autor": "George Orwell",
-        "fecha_publicacion": "1949-06-08",
-        "editorial": "Secker & Warburg",
-        "estado": "no disponible"
+        "titulo": "La ladrona de libros",
+        "autor": "Markus Zusak",
+        "fecha_publicacion": "2005-03-14",
+        "editorial": "Alfred A. Knopf",
+        "estado": "No disponible",
+        "imagen_url": "https:\/\/ellector.com.pa\/cdn\/shop\/products\/9786073126830_cf9dbdc8-ab5b-4f05-9962-697237e54c3d.jpg?v=1658295365",
+        "categoria": "Ficci\u00f3n hist\u00f3rica"
     },
     {
         "id": 6,
-        "titulo": "Matar a un ruise\u00f1or",
-        "autor": "Harper Lee",
-        "fecha_publicacion": "1960-07-11",
-        "editorial": "J.B. Lippincott & Co.",
-        "estado": "prestamo activo"
+        "titulo": "La chica del tren",
+        "autor": "Paula Hawkins",
+        "fecha_publicacion": "2015-01-13",
+        "editorial": "Riverhead Books",
+        "estado": "Pr\u00e9stamo activo",
+        "imagen_url": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTt1NV1VhQJly7JJLZ5jW5aBqH_c1ea4ONkxg&s",
+        "categoria": "Misterio"
     },
     {
         "id": 7,
-        "titulo": "El gran Gatsby",
-        "autor": "F. Scott Fitzgerald",
-        "fecha_publicacion": "1925-04-10",
-        "editorial": "Charles Scribner's Sons",
-        "estado": "disponible"
+        "titulo": "El secreto",
+        "autor": "Rhonda Byrne",
+        "fecha_publicacion": "2006-11-23",
+        "editorial": "Atria Publishing Group",
+        "estado": "Disponible",
+        "imagen_url": "https:\/\/ellector.com.pa\/cdn\/shop\/products\/001000134b_65e3c75c-89d8-497b-8d07-6bb74cd6d93c.jpg?v=1658621904",
+        "categoria": "Autoayuda"
     },
     {
         "id": 8,
-        "titulo": "Cumbres Borrascosas",
-        "autor": "Emily Bront\u00eb",
-        "fecha_publicacion": "1847-12-01",
-        "editorial": "Thomas Cautley Newby",
-        "estado": "no disponible"
+        "titulo": "Harry Potter y la piedra filosofal",
+        "autor": "J.K. Rowling",
+        "fecha_publicacion": "1997-06-26",
+        "editorial": "Bloomsbury",
+        "estado": "disponible",
+        "imagen_url": "https:\/\/ellector.com.pa\/cdn\/shop\/files\/9788478884452.jpg?v=1709923693",
+        "categoria": "Fantas\u00eda"
     },
     {
         "id": 9,
-        "titulo": "Don Quijote de la Mancha",
-        "autor": "Miguel de Cervantes",
-        "fecha_publicacion": "1605-01-16",
-        "editorial": "Francisco de Robles",
-        "estado": "disponible"
-    },
-    {
-        "id": 10,
-        "titulo": "El retrato de Dorian Gray",
-        "autor": "Oscar Wilde",
-        "fecha_publicacion": "1890-07-01",
-        "editorial": "Lippincott's Monthly Magazine",
-        "estado": "prestamo activo"
-    },
-    {
-        "id": 12,
-        "titulo": "Crimen y castigo",
-        "autor": "Fyodor Dostoevsky",
-        "fecha_publicacion": "1866-01-01",
-        "editorial": "The Russian Messenger",
-        "estado": "no disponible"
-    },
-    {
-        "id": 13,
-        "titulo": "La Odisea",
-        "autor": "Homero",
-        "fecha_publicacion": "800 A.C.",
-        "editorial": "Desconocida",
-        "estado": "prestamo activo"
+        "titulo": "Las mujeres que aman demasiado",
+        "autor": "Robin Norwood",
+        "fecha_publicacion": "1985-05-05",
+        "editorial": "hhhh",
+        "estado": "Disponible",
+        "imagen_url": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcS0PXMh_H-M68fzhq5pfSL_P0GNlo8hflk6lA&s",
+        "categoria": "Amor Propio"
     }
 ]

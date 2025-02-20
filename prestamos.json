@@ -1,0 +1,11 @@
+[
+    {
+        "id_libro": "1",
+        "titulo": "El hombre invisible",
+        "autor": "Ralph Ellison",
+        "nombre_cliente": "Mar\u00eda",
+        "email_cliente": "maria@example.com",
+        "fecha_prestamo": "2025-02-20",
+        "fecha_devolucion": "2025-03-20"
+    }
+]
